@@ -8,6 +8,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         england: resolve(__dirname, 'pages/england/index.html'),
+        africa: resolve(__dirname, 'pages/africa/index.html'),
+        afandi: resolve(__dirname, 'pages/afandi/index.html')
       },
     },
   },
