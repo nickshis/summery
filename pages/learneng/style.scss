@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: #191e2d;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    box-shadow: 2px 2px 5px 2px gray;
+    cursor: pointer;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+.back:hover{
+    scale: 1.08;
+    background-color: black;
+}
+
+.mainik{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 50px;
+    width: 100%;
+    height: 90vh;
+    color: white;
+
+    img{
+        width: 65%;
+        height: 60%;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px 2px black;
+    }
+}
+
+.main{
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    background-image: url('https://avatars.mds.yandex.net/i?id=9aa4b60eb58e75008055135ca159324e_l-5086851-images-thumbs&n=13');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, #191e2d, #191e2d20);
+}
+
+.main::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#191e2d, #191e2d20);
+}
